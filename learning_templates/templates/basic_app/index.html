@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+{% extends "basic_app/base.html" %}
+{% load my_extras %}
+  {% block body_block %}
+    <h1>INDEX</h1>
+    <h2>Example</h2>
+    <h1>{{ text|cutting:'o' }}</h1>
+    <h1>{{ number|add:"99" }}</h1>
+  {% endblock %}
